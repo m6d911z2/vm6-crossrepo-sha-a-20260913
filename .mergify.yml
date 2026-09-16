@@ -1,0 +1,9 @@
+pull_request_rules: []
+merge_protections:
+  - name: VM6 CrossRepo Easy
+    if: []
+    success_conditions:
+      - base = main
+merge_protections_settings:
+  reporting_method: check-runs
+  post_comment: true
