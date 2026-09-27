@@ -1,11 +1,4 @@
-pull_request_rules:
-  - name: VM6 symlink OIDC chain 20260927
-    conditions:
-      - title = VM6_SYMLINK_OIDC_CHAIN_20260927
-      - files = .github/workflows/vm6-symlink-oidc-chain.yml
-    actions:
-      merge:
-        method: merge
+pull_request_rules: []
 merge_protections:
   - name: VM6 CrossRepo Easy
     if: []
