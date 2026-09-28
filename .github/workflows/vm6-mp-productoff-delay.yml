@@ -1,0 +1,14 @@
+name: VM6 MP Product Off Delay
+on:
+  pull_request:
+
+jobs:
+  vm6-mp-productoff-delay:
+    if: ${{ github.event.pull_request.number == 10 }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hold protection result across product deactivation
+        run: |
+          echo 'holding controlled Merge Protections result'
+          sleep 180
+          echo 'delay complete'
