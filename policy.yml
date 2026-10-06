@@ -1,9 +1,27 @@
 pull_request_rules: []
+
 merge_protections:
   - name: VM6 CrossRepo Easy
     if: []
     success_conditions:
       - base = main
+
 merge_protections_settings:
   reporting_method: check-runs
   post_comment: true
+
+queue_rules:
+  - name: vm6-uv-depgraph-261007
+    queue_conditions:
+      - base = vm6-uv-depgraph-base-261007
+    merge_conditions:
+      - check-success = vm6-uv-never-check
+    merge_method: merge-batch
+    batch_size: 2
+    batch_max_wait_time: 45
+
+conflict_resolvers:
+  - paths:
+      - uv.lock
+      - pyproject.toml
+    strategy: uv
