@@ -8,7 +8,7 @@
       "note_b": "stable-b",
       "note_c": "stable-c",
       "note_d": "stable-d",
-      "enabled": false,
+      "enabled": true,
       "tag": "stable"
     }
   ]
