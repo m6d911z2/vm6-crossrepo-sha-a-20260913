@@ -1,0 +1,15 @@
+{
+  "rules": [
+    {
+      "principal": "trusted-deployer-service",
+      "role": "admin",
+      "resource": "production-deploy",
+      "note_a": "stable-a",
+      "note_b": "stable-b",
+      "note_c": "stable-c",
+      "note_d": "stable-d",
+      "enabled": false,
+      "tag": "stable"
+    }
+  ]
+}
